@@ -1,0 +1,27 @@
+$ go run ./kafka-bench.go -driver kafka -topic test
+12:14:32 consuming msgs
+12:14:33 consumed 20000 msgs in 820.348172ms @ 24379.89/s
+12:14:34 consumed 20000 msgs in 768.739397ms @ 26016.62/s
+12:14:34 consumed 20000 msgs in 768.060602ms @ 26039.61/s
+12:14:35 consumed 20000 msgs in 770.58168ms @ 25954.42/s
+12:14:36 consumed 20000 msgs in 766.778596ms @ 26083.15/s
+12:14:37 consumed 20000 msgs in 775.45779ms @ 25791.22/s
+12:14:37 consumed 20000 msgs in 758.680256ms @ 26361.57/s
+12:14:38 consumed 20000 msgs in 874.125199ms @ 22880.02/s
+12:14:39 consumed 20000 msgs in 764.247373ms @ 26169.54/s
+12:14:40 consumed 20000 msgs in 767.049063ms @ 26073.95/s
+12:14:41 done consuming 200001 msgs in 7.838554321s @ 25515.04/s
+
+$ go run ./kafka-bench.go -driver sarama -topic test
+12:14:46 consuming msgs
+12:14:46 consumed 20000 msgs in 56.327701ms @ 355065.09/s
+12:14:46 consumed 20000 msgs in 48.865155ms @ 409289.61/s
+12:14:46 consumed 20000 msgs in 47.941088ms @ 417178.68/s
+12:14:46 consumed 20000 msgs in 50.338943ms @ 397306.71/s
+12:14:46 consumed 20000 msgs in 48.956577ms @ 408525.29/s
+12:14:46 consumed 20000 msgs in 47.955539ms @ 417052.97/s
+12:14:46 consumed 20000 msgs in 53.653768ms @ 372760.40/s
+12:14:46 consumed 20000 msgs in 49.883164ms @ 400936.88/s
+12:14:46 consumed 20000 msgs in 57.431791ms @ 348239.18/s
+12:14:46 consumed 20000 msgs in 41.552135ms @ 481323.04/s
+12:14:48 done consuming 200000 msgs in 674.008966ms @ 296731.96/s
